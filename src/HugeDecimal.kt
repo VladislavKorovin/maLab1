@@ -77,8 +77,12 @@ class HugeDecimal(input: String) {
         private var roundingMode: RoundingMode = RoundingMode.HALF_UP //Режим округления
         private var representationMode = RepresentationMode.NORMALIZED //Способ представления числа (нормализованный или нет)
 
-        fun setRoundingMode(roundingMode: RoundingMode){
+        fun setRoundingMode(roundingMode: RoundingMode){ //Метод установки режима округления
             Config.roundingMode = roundingMode
+        }
+
+        fun setRepresentationMode(representationMode: RepresentationMode){ //Метод установки способа представления числа
+            Config.representationMode = representationMode
         }
     }
 }

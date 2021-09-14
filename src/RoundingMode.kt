@@ -1,5 +1,5 @@
-enum class RoundingMode {
-    HALF_UP,
-    HALF_DOWN,
-    DROP
+enum class RoundingMode { //Режим округления
+    HALF_UP, //К ближайшему большему
+    HALF_DOWN, //К ближайшему меньшему
+    DROP //Отбрасывание
 }
